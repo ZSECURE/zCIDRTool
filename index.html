@@ -1,4 +1,32 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <title>CIDR → IP list helper</title> <style> body{font-family:Arial,Helvetica,sans-serif;padding:2rem;background:#f5f5f5;} h1{margin-top:0} textarea{width:100%;padding:.5rem;font-family:monospace;border:1px solid #bbb;border-radius:4px;box-sizing:border-box;} #input{height:160px} #output{height:220px;background:#fff} button{margin:1rem 0;padding:.6rem 1.2rem;font-size:1rem;cursor:pointer} .error{color:#d33} </style> </head> <body> <h1>CIDR → IP List</h1> <p>Paste one CIDR block per line:</p> <textarea id="input" placeholder="e.g. 167.98.40.96/27"></textarea>
-<button id="convert">Convert</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CIDR → IP list helper</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;padding:2rem;background:#f5f5f5;}
+    h1{margin-top:0}
+    textarea{width:100%;padding:.5rem;font-family:monospace;border:1px solid #bbb;border-radius:4px;box-sizing:border-box;}
+    #input{height:160px}
+    #output{height:220px;background:#fff}
+    button{margin:1rem 0;padding:.6rem 1.2rem;font-size:1rem;cursor:pointer}
+    .error{color:#d33}
+  </style>
+</head>
+<body>
+  <h1>CIDR → IP List</h1>
 
-<div id="error" class="error"></div> <p>Result:</p> <textarea id="output" readonly></textarea> <p><small>All processing happens in your browser – nothing is sent anywhere.</small></p> <script src="script.js"></script> </body> </html>
+  <p>Paste one CIDR block per line:</p>
+  <textarea id="input" placeholder="e.g. 167.98.40.96/27"></textarea>
+
+  <button id="convert">Convert</button>
+  <div id="error" class="error"></div>
+
+  <p>Result:</p>
+  <textarea id="output" readonly></textarea>
+
+  <p><small>All processing happens in your browser – nothing is sent anywhere.</small></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
